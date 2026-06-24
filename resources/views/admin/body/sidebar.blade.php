@@ -48,7 +48,7 @@
                         <li class="submenu">
                             <a href="javascript:void(0);">
                                 <i class="ti ti-users"></i>
-                                <span>User Management</span>
+                                <span>User Manage</span>
                                 <span class="menu-arrow"></span>
                             </a>
 
@@ -58,6 +58,33 @@
                                         class="{{ request()->routeIs('usermanage.*') ? 'active' : '' }}">
                                         <i class="ti ti-users">
                                         </i><span>All Users</span>
+                                    </a>
+                                </li>
+
+                                {{-- <li>
+                                    <a href="{{ route('resign-employees.index') }}"
+                                        class="{{ request()->routeIs('resign-employees.index') ? 'active' : '' }}">
+                                        <i class="ti ti-users">
+                                        </i><span>Resigned Employess</span>
+                                    </a>
+                                </li> --}}
+
+                            </ul>
+                        </li>
+
+                        <li class="submenu">
+                            <a href="javascript:void(0);">
+                                <i class="ti ti-flag-check"></i>
+                                <span>Country Manage</span>
+                                <span class="menu-arrow"></span>
+                            </a>
+
+                            <ul style="{{ request()->routeIs('countrymanage.*') ? 'display:block;' : '' }}">
+                                <li>
+                                    <a href="{{ route('countrymanage.index') }}"
+                                        class="{{ request()->routeIs('countrymanage.*') ? 'active' : '' }}">
+                                        <i class="ti ti-flag-share">
+                                        </i><span>All Countries</span>
                                     </a>
                                 </li>
 

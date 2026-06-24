@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\Backend\CountryManage\CountryController;
 use App\Http\Controllers\Backend\UserManagement\UserController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
@@ -28,6 +29,10 @@ Route::middleware('auth')->group(function () {
 
     Route::resource('usermanage', UserController::class);
     Route::get('user-datatable', [UserController::class, 'userDataTable'])->name('user-datatable');
+
+    Route::resource('countrymanage', CountryController::class);
+    Route::get('country-datatable', [CountryController::class, 'countryDataTable'])->name('country-datatable');
+
 });
 
 Route::get('admin/logout', [AdminController::class, 'adminLogout'])->name('admin-logout');

@@ -2015,7 +2015,7 @@ progress {
     color: var(--bs-body-color);
     -webkit-appearance: none;
     -moz-appearance: none;
-    appearance: none;
+    appearance: auto;
     background-color: var(--bs-body-bg);
     background-clip: padding-box;
     border: var(--bs-border-width) solid var(--bs-border-color);

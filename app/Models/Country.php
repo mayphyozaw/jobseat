@@ -14,6 +14,12 @@ class Country extends Model
         'status',
     ];
 
+
+    public function jobs()
+    {
+        return $this->hasMany(JobPost::class);
+    }
+
     protected function acsrImagePath(): Attribute
     {
         return Attribute::make(

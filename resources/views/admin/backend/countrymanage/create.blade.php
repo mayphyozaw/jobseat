@@ -62,7 +62,7 @@
                                         <img id="showImage"
                                             src="{{ !empty($country_data->flag) ? asset('upload/flag_images/' . $country_data->flag) : asset('upload/no_image.jpg') }}"
                                             class="img-thumbnail mb-2" style="width:70px;height:70px;object-fit:cover;"
-                                            alt="image profile">
+                                            alt="image country">
                                     </div>
                                 </div>
 

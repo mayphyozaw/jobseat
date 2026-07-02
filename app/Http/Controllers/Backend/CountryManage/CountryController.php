@@ -69,7 +69,7 @@ class CountryController extends Controller
     public function edit($id)
     {
         $country = Country::findOrFail($id);
-        return view('admin.backend.country.edit', compact('country'));
+        return view('admin.backend.countrymanage.edit', compact('country'));
     }
 
     public function update(CountryUpdateRequest $request, $id)

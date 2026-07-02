@@ -88,16 +88,49 @@
                                     </a>
                                 </li>
 
-                                {{-- <li>
-                                    <a href="{{ route('resign-employees.index') }}"
-                                        class="{{ request()->routeIs('resign-employees.index') ? 'active' : '' }}">
-                                        <i class="ti ti-users">
-                                        </i><span>Resigned Employess</span>
+                            </ul>
+                        </li>
+
+
+                         <li class="submenu">
+                            <a href="javascript:void(0);">
+                                <i class="ti ti-briefcase"></i>
+                                <span>Job Manage</span>
+                                <span class="menu-arrow"></span>
+                            </a>
+
+                            <ul style="{{ request()->routeIs('jobmanage.*') ? 'display:block;' : '' }}">
+                                <li>
+                                    <a href="{{ route('jobmanage.index') }}"
+                                        class="{{ request()->routeIs('jobmanage.*') ? 'active' : '' }}">
+                                        <i class="ti ti-briefcase">
+                                        </i><span>All Job Posts</span>
                                     </a>
-                                </li> --}}
+                                </li>
 
                             </ul>
                         </li>
+
+                        <li class="submenu">
+                            <a href="javascript:void(0);">
+                                <i class="ti ti-briefcase"></i>
+                                <span>Candidate Manage</span>
+                                <span class="menu-arrow"></span>
+                            </a>
+
+                            <ul style="{{ request()->routeIs('candidatemanage.*') ? 'display:block;' : '' }}">
+                                <li>
+                                    <a href="{{ route('candidatemanage.index') }}"
+                                        class="{{ request()->routeIs('candidatemanage.*') ? 'active' : '' }}">
+                                        <i class="ti ti-briefcase">
+                                        </i><span>All Candidate Lists</span>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </li>
+
+
                     </ul>
                 </li>
 

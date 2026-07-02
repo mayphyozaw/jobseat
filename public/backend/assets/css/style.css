@@ -2520,7 +2520,7 @@ progress {
   font-weight: 400;
   line-height: 1.5;
   color: var(--crms-body-color);
-  appearance: none;
+  appearance: auto;
   background-color: var(--crms-secondary-bg);
   background-clip: padding-box;
   border: var(--crms-border-width) solid var(--crms-border-color);
